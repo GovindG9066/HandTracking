@@ -1,0 +1,99 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Text Styling */
+.text-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#para {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Main Flex Container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+}
+
+/* Left Section: Video + Canvas in Column */
+.container-video-canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Video Styling (Medium Size for Visibility) */
+video {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Canvas Styling (Finger Tracking) */
+#canvas {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #3498db;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Section (Image) */
+#image {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video, #canvas, #image {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-container {
+        width: 90%;
+    }
+}
