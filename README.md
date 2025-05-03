@@ -101,7 +101,7 @@ For any inquiries or feedback, feel free to connect:
 
 - **GitHub**: [GovindG9066](https://github.com/GovindG9066/HandTracking)
 - **Email**: gadekargovind575@gmail.com
-- **Live Project**: [HandTracking](hand-tracking-website.vercel.app)
+- **Live Project**: [HandTracking](https://hand-tracking-website.vercel.app/)
 
 ---
 
